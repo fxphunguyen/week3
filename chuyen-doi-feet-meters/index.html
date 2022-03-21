@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+   <!--  <form>
+        <p>
+            <label>Feet</label>
+            <input id="idFeet" type="number" placeholder="Fahrenheit" oninput="Feet(this.value)"
+                onchange="Feet(this.value)">
+        </p>
+        <p>Meters: <span id="idMeters"></span></p>
+    </form>
+
+    <script>
+//Chuyển Feet sang Meters
+        function Feet(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("idMeters").innerHTML = (valNum * 0.305);
+        }
+    </script> -->
+
+
+
+    <form>
+        <p>
+            <label>Meters</label>
+            <input id="idMeters" type="number" placeholder="Fahrenheit" oninput="Meters(this.value)"
+                onchange="Meters(this.value)">
+        </p>
+        <p>Feet: <span id="idFeet"></span></p>
+    </form>
+    <script>
+// Chuyển Meters sang Feet
+        function Meters(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("idFeet").innerHTML = (valNum * 3.280);
+        }
+    </script>
+</body>
+
+</html>
