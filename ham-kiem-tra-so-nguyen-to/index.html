@@ -25,9 +25,10 @@
             return flag;
         }
 
-        let array = prompt("Nhập số bất kỳ")
+        let array = Number(prompt("Nhập số bất kỳ"))
         for (let i = 0; i < array.length; i++) {
-            if (isprime(array[i]) == 1) console.log(array[i]);
+            if (isprime(array[i]) == 1)
+            alert(array[i] + "là số nguyên tố");
         }
 
     </script>
