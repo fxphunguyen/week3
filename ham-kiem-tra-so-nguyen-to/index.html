@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isprime(n) {
+            let flag = 1;
+            if (n < 2) return flag = 0;
+            let i = 2;
+            while (i < n) {
+                if (n % i == 0) {
+                    flag = 0;
+                    break;
+                }
+                i++;
+            }
+
+            return flag;
+        }
+
+        let array = prompt("Nhập số bất kỳ")
+        for (let i = 0; i < array.length; i++) {
+            if (isprime(array[i]) == 1) console.log(array[i]);
+        }
+
+    </script>
+</body>
+
+</html>
