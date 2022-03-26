@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</h3>
+    <script>
+        let number1 = prompt("Nhập vào số thứ nhất: ");
+        let number2 = prompt("Nhập vào số thứ hai: ");
+        function swap(){
+            let temp = number1;
+            number1 = number2;
+            number2 = temp;
+            document.write(`number1 = ${number1}, number2 = ${number2}`);
+        }
+        swap();
+    </script>
+</body>
+</html>
